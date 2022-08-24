@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="./components/led_display/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Guess the number - Game</title>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <span class="title">GUESS THE NUMBER</span>
+                    <span class="sub-title">1 TO 300</span>
+                    <span class="separator"></span>
+                </div>
+                <div class="card-content">
+                    <div class="card-result">
+                        <span></span>
+                    </div>
+                    <div class="card-led">
+                        <div class="display">
+                            <div class="segment A X" id="a">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment B Y" id="b">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment C Y" id="c">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment D X" id="d">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment E Y" id="e">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment F Y" id="f">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment G X" id="g">
+                                <span class="segment-border"></span>
+                            </div>
+                        </div>
+                        <div class="display second-display">
+                            <div class="segment A X" id="a2">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment B Y" id="b2">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment C Y" id="c2">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment D X" id="d2">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment E Y" id="e2">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment F Y" id="f2">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment G X" id="g2">
+                                <span class="segment-border"></span>
+                            </div>
+                        </div>
+                        <div class="display third-display">
+                            <div class="segment A X" id="a3">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment B Y" id="b3">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment C Y" id="c3">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment D X" id="d3">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment E Y" id="e3">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment F Y" id="f3">
+                                <span class="segment-border"></span>
+                            </div>
+                            <div class="segment G X" id="g3">
+                                <span class="segment-border"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-game">
+                        <button class="restart is-hidden" onclick="getNewNumber()">
+                            <span><i class="fa fa-refresh"></i></span>
+                            <span>NEW GAME</span>
+                        </button>
+                    </div>
+                    <div class="card-form">
+                        <form id="user-form">
+                            <input type="number" id="guessNumber"name="guessNumber" min="1" max="300"placeholder="Guess">
+                            <button type="submit" onclick="handleClick()">
+                                <span>SUBMIT</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>
+            <strong>Developed</strong> by <a href="https://www.linkedin.com/in/viniciusbsarmento" target="_blank">Vinícius Bispo Sarmento</a>
+        </p>
+        <a href="http://viniciusbsarmento.com/" target="_blank"><img src="../assets/images/logo.png" width="115" height="25" alt="Logomarca Studio Sol"></a>
+    </footer>
+    <script src="./js/numberService.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

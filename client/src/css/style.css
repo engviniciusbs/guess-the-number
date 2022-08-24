@@ -1,0 +1,212 @@
+body{
+    font-family: 'Montserrat';
+}
+
+a{
+	color: #FF6600;
+	text-decoration: none;
+}
+
+input{
+    font-family: 'Roboto';
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+
+button{
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.02);
+    transition: 300ms ease;
+}
+
+.is-hidden{
+    display: none;
+}
+
+.section{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #EEEEEE 0%, #FFFFFF 100%);
+}
+
+@media only screen and (max-width: 768px){
+    .section {
+        height: 88vh;
+    }
+}
+
+.card{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px){
+    div.card-header > span.title{
+        font-size: 26px;
+    }
+}
+
+.card-header .title{
+    height: 60px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -1px;
+    background: linear-gradient(174.92deg, #EF6C00 18.47%, #DB6300 36.57%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-header .sub-title{
+    margin-bottom: 10px;
+    margin-top: -10px;
+    font-weight: bold;
+    color: #262a34;
+}
+
+.card-header .separator{
+    width: 255px;
+    height: 1px;
+    background: #CFCFCF;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.card-header, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-result{
+    position: absolute;
+    top: 25%;
+}
+
+.card-result span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #f60;
+}
+
+.win .card-result span{
+    color: #32BF00;
+}
+
+.error .card-result span{
+    color: #CC3300;
+}
+
+.new-game{
+    position: absolute;
+    top: 60%;
+}
+
+.new-game button{
+    width: 130px;
+    height: 42px;
+    background: linear-gradient(180deg, #434854 0%, #9E9E9E 100%);
+    border: none;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    transition: 300ms ease;
+}
+
+.new-game button:active{
+    background: linear-gradient(180deg, #434854 0%, #525252 100%);
+}
+
+.new-game button:hover i{
+    transform: rotate(180deg);
+    transition: 500ms ease;
+}
+
+.new-game button span{
+    padding: 3px;
+}
+
+.card-form{
+    position: absolute;
+    top: 75%
+}
+
+.card-form input{
+    width: 217px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px;
+}
+
+.card-form input.disable{
+    color: #9E9E9E;
+    background: #F5F5F5;
+    pointer-events: none;
+}
+
+.card-form input:focus-visible{
+    border: 1px solid #FF6600;
+}
+
+.card-form button{
+    width: 70px;
+    height: 46px;
+    background: linear-gradient(180deg, #EF6C00 0%, #C0661C 100%);
+    border: none;
+    border-radius: 4px;
+}
+
+.card-form button:active{
+    background: linear-gradient(180deg, #853c00 0%, #853c00 100%);
+}
+
+.card-form button.disable{
+    background: #DDDDDD;
+    pointer-events: none;
+}
+
+.card-form span{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.1;
+    transition: 300ms ease;
+}
+
+footer:hover{
+    opacity: 1;
+    transition: 300ms ease;
+}
+
+footer p{
+    margin-bottom: 1rem;
+    font-size: 13px;
+}
